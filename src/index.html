@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,17 +12,22 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
+  <body class="bg-success text-light">
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 class="mt-5">Random Card Generator</h1>
+
+      <div class="row d-flex justify-content-center">
+        <div class="my-card col-4 col-sm-3 col-md-4 bg-light text-dark">
+          <div class=" d-flex justify-content-start">
+            <span id="top">♥</span>
+          </div>
+          <div class="d-flex justify-content-center">
+            <p id="number">7</p>
+          </div>
+          <div class="d-flex justify-content-end">
+            <span id="botton" style="transform: rotate(180deg);">♥</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
